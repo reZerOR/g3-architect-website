@@ -1,5 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
 * {
-  font-family: "Lato", sans-serif;
   font-family: "Work Sans", sans-serif;
+}
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 10px 200px;
+}
+.nav-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #424242;
+}
+/* bannar styles */
+.banner-content {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+.banner-description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 15px;
+}
+.btn {
+  border-radius: 5px;
+  background: #ff900e;
+  border: none;
+  padding: 15px 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+.banner img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
