@@ -7,7 +7,7 @@ header {
   /* padding: 10px 240px; */
 }
 .nav-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: black;
 }
@@ -46,7 +46,7 @@ ul li {
 .banner-description {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 26px;
   color: #727272;
 }
 .btn {
@@ -115,24 +115,100 @@ ul li {
   margin-top: 0px;
 }
 
+/* sponsors style */
+.sponsors {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.sponsors-img {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sponsors-img img {
+  width: 165px;
+  height: 50px;
+}
+
+/* features style */
+
+.feature {
+  display: flex;
+  margin-top: 100px;
+  gap: 146px;
+}
+.feature .nav-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.feature-card {
+  padding: 30px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-left: 5px dotted #ff900e;
+  padding-left: 20px;
+}
+
+.ten-year {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  width: 200px;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  bottom: 75px;
+}
+.feature-img img {
+  margin-left: 50px;
+}
+.ten-year h3 {
+  font-size: 2.5rem;
+  color: #ff900e;
+  font-weight: 700;
+  margin: 0;
+}
+.ten-year p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ff900e;
+  margin-top: 10px;
+}
+
 /* media styles */
 @media screen and (max-width: 576px) {
   header {
     padding: 20px;
   }
   nav,
-  .team {
-    width: 100%;
+  .team,
+  .fact-card-container,
+  .sponsors-img,
+  .feature {
     flex-direction: column;
   }
   .team-img {
     grid-template-columns: 1fr;
   }
-  .team-content {
+  .team-content,
+  .fact-card-container {
     padding: 0 20px;
   }
-  .banner {
+  .fact-card-container {
+    gap: 20px;
+  }
+  .sponsors-img {
+    gap: 50px;
+  }
+  .feature-img img {
     width: 100%;
+    margin: 0;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 960px) {
